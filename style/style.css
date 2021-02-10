@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    /* color: rgb(155, 90, 207); */
+    text-decoration: none;
+}
+.container-fluid ,p, .row{
+
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.container-fluid .header{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 70px;
+    top:0;
+    background-color: rgb(255, 255, 255);
+    position: fix;
+    padding: 10px 10px;
+  
+
+}
+ .header .loginup{
+ 
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    padding-left: 10px;
+
+}
+.container-fluid .header .loginup a{
+    padding-left: 5px;
+    padding-right: 5px;
+   text-decoration: none;
+   font-weight: bold;
+   font-size: 1rm;
+
+}
+.container-fluid .header .nav{
+    
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.container-fluid .header .nav .menu-icon .menu-btn {
+    display: none;
+
+}
+.container-fluid .header .nav .logo{
+    max-width: 160px;
+    padding-right: 10px;
+
+}
+.container-fluid .header .nav .logo img{
+   
+    width: 100%;
+    margin-left: 10px;
+
+}
+.container-fluid .header .nav .menu{
+
+}
+.container-fluid .header .nav .menu a{
+    padding-right: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+        /* بنر */
+        .banner{
+            width: 100%;
+            position: relative;
+        }
+
+        .banner .coverimage{
+            width: 100%;
+            top: 0;
+        }
+        .banner .coverimage img{
+            width: 100%;
+        }
+        .banner .innerimage{
+            position: absolute;
+            top: 41%;
+            left: 8%;
+        }
+        .banner .innerimage img{
+            width:360px;
+        }
+        .banner .innerimage p{
+            font-size:26px;
+            color: darkmagenta;
+            font-weight: bold;
+
+
+        }
+/* گذاشتن متن بین خط */
+
+h1.strikearound {
+    color: rgb(126, 29, 172);
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    z-index: 1;
+    overflow: hidden;
+    text-align: right;
+}
+h1.strikearound:before, h1.strikearound:after {
+    overflow: hidden;
+    height: 1px;
+    content: '';
+    background-color:rgb(126, 29, 172);
+}
+h1.strikearound:before {
+    text-align: right;
+    flex:1;
+    right:0;
+}
+h1.strikearound:after {
+    text-align: left;
+   
+    flex:9;
+    left:0;
+}
+
+/* باکس تصاویر */
+.container-fluid .row {
+
+}
+.container-fluid .row .col-lg-2{
+  
+    
+}
+.container-fluid .row .col-lg-2 a{
+
+}
+.container-fluid .row .col-lg-2  a .card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;  
+}
+.container-fluid .row .col-lg-2 a .card:hover .caption {
+    transition: 1s;
+    height: 100%;
+    padding-top: 5px;
+
+}
+.container-fluid .row .col-lg-2 a .card .imgcard{
+   
+    
+}
+.container-fluid .row .col-lg-2 a .card .imgcard img{
+    width: 100%;
+    
+}
+.container-fluid .row .col-lg-2 a .card .caption{
+    
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    bottom:0;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius:13% 13% 0 0 ;
+    text-align: right;
+    padding-right: 7px;
+    padding-left: 7px;
+    color: rgb(126, 29, 172);
+    font-weight: bold;
+}
+/* فوتر */
+.footer {
+    background-color: rgb(16, 17, 39);
+    color: white;
+    text-align: center;
+    font-size:12px;
+}
+.footer .center{
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer .center .nav{
+   
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    padding-top:20px ;
+}
+ 
+.footer .center .nav .nav1{
+    display:flex;
+    align-items: center;
+    flex: 1;
+    justify-content:space-around;
+    
+}
+.footer .center .nav .nav2{
+    display:flex;
+    align-items: center;
+    flex: 1;
+    justify-content:space-around;
+}
+.footer .center .nav .nav2 a ,.footer .center .nav .nav1 a {
+    color: white;
+    flex:1;
+}
+.footer .center .nav .nav1 .vline ,.footer .center .nav .nav2 .vline{
+    color: white;
+    flex:0;
+    border-left: 1px solid red;
+    height: 8px;
+}
+
+.footer .center .row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.footer .center .row  .col-md-4  {
+    margin-top: 30px;
+    /* margin-bottom: 30px; */
+  
+   
+}
+.footer .center .row  .col-md-4 a img{
+   background-color: white;
+   border-radius: 50%;
+   width: 100%;
+   margin-top: 0;
+   margin-bottom: 0;
+   margin-left: auto;
+   margin-right: auto;
+  
+}
+.footer .center .copyright{
+    margin-top: 0;
+    padding-top: 30px;
+    padding-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 40px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    /* عکس و کپشن داخلی بنر*/
+    .banner .innerimage img{
+        width:300px;
+    }
+    .banner .innerimage p{
+        font-size:21px;
+    }
+    .banner .innerimage{
+        position: absolute;
+        top: 41%;
+        left: 7%;
+    }
+ }
+
+ @media only screen and (max-width: 992px) {
+     /* عکس و کپشن داخلی بنر*/
+    .banner .innerimage img{
+        width:212px;
+    }
+    .banner .innerimage p{
+        font-size:15px;
+    }
+    .footer .center   {
+        width: 75%;        
+    }
+ }
+
+
+ @media only screen and (max-width:768px) {
+    /* عکس و کپشن داخلی بنر*/
+       .banner .innerimage img{
+        width:180px;
+    }
+    .banner .innerimage p{
+        font-size:13px;
+    }
+    .banner .innerimage{
+        position: absolute;
+        top: 35%;
+        left: 6%;
+    }
+    /* فوتر */
+    .footer{
+        font-size: 12px;
+    }
+    .footer .center   {
+        width: 70%;
+      }
+    .display{
+        display: none;
+    }
+    .footer .center .nav{
+        display:block;
+        padding-top: 40px;
+        padding-bottom:20px ;
+    }
+    .footer .center .nav .nav2{
+     margin-top: 20px;
+    }  
+ }
+ 
+
+ @media only screen and (max-width: 600px) {
+     /* هدر: هاید شدن منو و نمایش باتم */
+    .container-fluid .header .nav .menu-icon .menu-btn{
+        display: block;
+    }
+    .container-fluid .header .nav .menu{
+        display: none;
+    }
+    .container-fluid .header .loginup{
+        font-size: 11px;
+    }
+    .banner .innerimage img{
+        width:145px;
+    }   
+    .banner .innerimage p{
+        font-size:10px;
+    }
+    h1.strikearound {
+        font-size: 13px;  
+    }
+    .caption{
+        font-size: 12px;
+    }
+ }
+
+
+ @media only screen and (max-width: 450px) {
+    .banner .innerimage img{
+        width:110px;
+    }
+    .banner .innerimage p{
+        font-size:8px;
+    }
+    .banner .innerimage{
+        position: absolute;
+        left: 6%;
+    }
+}
+
+
+    @media only screen and (max-width: 360px) {
+        .banner .innerimage img{
+            width:95px;
+        }
+        .banner .innerimage p{
+            font-size:7px;
+        }
+        .banner .innerimage{
+            left: 5%;
+        }
+    }
+     
+ 
+ 
+
+ 
+  
+
+
+
+
+
+
+
+
